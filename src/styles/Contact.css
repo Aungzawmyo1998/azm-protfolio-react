@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #A3FEF9;
+    --text-color: #FFF;
+    --bg-primary-color: #282F37;
+    --bg-secondary-color: #383838;
+    --shadow-color: #FFF;
+    --btn-border-radius: 25px;
+    --header-size: 40px;
+    --border-radius: 20px;
+}
+
+#contact {
+    width: 100%;
+}
+
+#contact .contact-cont {
+    width: 100%;
+    height: calc(100vh - 150px);
+    background-color: var(--bg-primary-color);
+    padding: 3rem;
+    
+}
+
+#contact .header {
+    font-size: var(--header-size);
+    font-weight: 600;
+    color: var(--text-color);
+    width: fit-content;
+    /* text-align: center; */
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 5rem;
+}
+
+#contact .col {
+    color: var(--primary-color);
+}
+
+#contact .form-cont {
+    width: 1300px;
+    margin: 0 auto;
+}
+#contact .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+#contact input {
+    width: 500px;
+    height: fit-content;
+    padding: 10px;
+    font-size: 24px;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    background-color: transparent;
+    color: var(--primary-color);
+    outline: none;
+}
+
+#contact .message {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    font-size: 24px;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    background-color: transparent;
+    color: var(--primary-color);
+    outline: none;
+}
+
+#contact .contact-btn {
+    width: 200px;
+    height: fit-content;
+    font-size: 24px;
+    border: 2px solid var(--primary-color);
+    font-weight: 600;
+    background-color: transparent;
+    color: var(--primary-color);
+    border-radius: var(--btn-border-radius);
+    padding: 8px 0;
+    cursor: pointer;
+    margin: 0 auto;
+}

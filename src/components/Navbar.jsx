@@ -10,8 +10,8 @@ export default function Navbar() {
                     Aung
                 </div>
                 <ul className="nav-bar">
-                    <li className='nav-item'>Home</li>
-                    <li className='nav-item'>About</li>
+                    <li className='nav-item'><a href="#">Home</a></li>
+                    <li className='nav-item'><a href="#about">About</a></li>
                     <li className='nav-item'>Service</li>
                     <li className='nav-item'>Blog</li>
                 </ul>
