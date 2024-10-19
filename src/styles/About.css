@@ -59,7 +59,141 @@
 #about .data-cont {
     width: 1300px;
     height: 630px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     border: 2px solid var(--primary-color);
     border-radius: 20px;
+}
+
+/* Section about  */
+
+#aboutMe .data {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#aboutMe .img {
+    width: 450px;
+    height: 500px;
+
+    border: 1px solid red;
+}
+#aboutMe .text {
+    width: 600px;
+    /* height: 500px; */
+    height: fit-content;
+    align-self: flex-end;
+    font-size: 24px;
+    /* border: 1px solid green; */
+    color: var(--text-color);
+    line-height: 35px;
+    /* word-spacing: 10px; */
+}
+
+/* Section skills */
+
+#skill .data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#skill .data-items {
+    width: 500px;
+    height: 500px;
+    padding: 1rem;
+    /* border: 1px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+#skill .item-two li {
+    /* text-align: right; */
+    /* float: right; */
+    align-self: flex-end;
+}
+#skill .skill-header {
+    width: fit-content;
+    height: fit-content;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--primary-color);
+    transform: rotate(270deg);
+    /* border: 1px solid green; */
+    
+}
+
+#skill .data-items >li {
+    list-style: none;
+}
+#skill .data-items .bar {
+    display: block;
+    width: 400px;
+    height: 20px;
+    background-color: #FFF;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding: 0 3px;
+    /* box-shadow: 2px 2px 2px #ccc; */
+}
+#skill .data-items .bar-data {
+    display: block;
+    /* width: 300px; */
+    height: 15px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+#skill .data-items h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+
+/* section Project */
+#project .data {
+    
+
+    /* border: 1px solid red; */
+}
+
+#project .proj-header {
+    font-size: 40px;
+    font-weight: 500;
+
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#project .project-cont {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#project .img {
+    width: 315px;
+    height: 469px;
+    border-radius: 30px;
+    border: 1px solid red;
 }

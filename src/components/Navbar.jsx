@@ -12,8 +12,8 @@ export default function Navbar() {
                 <ul className="nav-bar">
                     <li className='nav-item'><a href="#">Home</a></li>
                     <li className='nav-item'><a href="#about">About</a></li>
-                    <li className='nav-item'>Service</li>
-                    <li className='nav-item'>Blog</li>
+                    <li className='nav-item'><a href="#service">Service</a></li>
+                    <li className='nav-item'><a href="#blog">Blog</a></li>
                 </ul>
             </div>
         </div>
