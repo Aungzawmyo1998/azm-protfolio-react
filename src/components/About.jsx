@@ -1,5 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 
+// Image
+import bakery from "../assets/images/bakery.png";
+import fresh from "../assets/images/fresh.png"
+import bravis from "../assets/images/bravis.png";
+import azm  from "../assets/images/azm-profile.png";
+
+
 
 import "../styles/About.css"
 
@@ -72,16 +79,6 @@ import "../styles/About.css"
         }
             
         useEffect(()=>{
-            // const styleSheet = document.createElement('style');
-            // styleSheet.type = 'text/css';
-            // styleSheet.innerHTML = `@keyframes html {
-            //                             0% {
-            //                                 width: 0;
-            //                             }
-            //                             100% {
-            //                                 width: ${skillState.html}%;
-            //                             }`
-            // document.head.appendChild(styleSheet);
             keyFrames("html");
             if (htmlRef.current) {
                 htmlRef.current.style.width = skillState.html;
@@ -128,7 +125,7 @@ import "../styles/About.css"
 
         
     return (
-        <div id='about'>
+        <section id='about'>
             {/* <style>
                 {
                     `
@@ -146,20 +143,22 @@ import "../styles/About.css"
             <div className="about-cont">
                 <h1 className="header">About <span className='col'>Me</span></h1>
                 <div className="about-nav-cont">
-                    <button className='about-btn' value="about" onClick={handlePage}>About</button>
-                    <button className='about-btn' value="skill" onClick={handlePage}>Skills</button>
-                    <button className='about-btn' value="project" onClick={handlePage}>Projects</button>
+                    <button className='about-btn btn-hover' value="about" onClick={handlePage}>About</button>
+                    <button className='about-btn btn-hover' value="skill" onClick={handlePage}>Skills</button>
+                    <button className='about-btn btn-hover' value="project" onClick={handlePage}>Projects</button>
                 </div>
                 <div className="data-cont">
-                    <section id='aboutMe' ref={aboutDisplay} style={{display: "block"}}>
+                    <div id='aboutMe' ref={aboutDisplay} style={{display: "block"}}>
                         <div className="data">
-                            <div className="img"></div>
+                            <div className="img">
+                                <img src={azm} alt="" />
+                            </div>
                             <div className="text">
                             Hi, <span style={{fontWeight: "600", color:"#A3FEF9"}}>I’m Aung zaw Myo</span>, a passionate web developer with one years of experience in building dynamic and responsive websites and applications. My expertise lies in creating seamless user experiences and efficient back-end systems, ensuring websites are fast, secure, and user-friendly. With a strong foundation in HTML, CSS, JavaScript, and frameworks like React and Node.js, I thrive on transforming ideas into web solutions that meet both client and user needs. Whether working independently or as part of a collaborative team, I love turning complex problems into simple, elegant code.
                             </div>
                         </div>
-                    </section>
-                    <section id='skill' ref={skillDisplay} style={{ display: "none"}}>
+                    </div>
+                    <div id='skill' ref={skillDisplay} style={{ display: "none"}}>
                         <div className="data">
                             <div className="data-items">
                                 <li>
@@ -201,21 +200,21 @@ import "../styles/About.css"
                                 </li>
                             </div>
                         </div>
-                    </section>
-                    <section id='project' ref={projectDisplay} style={{display: "none"}}>
+                    </div>
+                    <div id='project' ref={projectDisplay} style={{display: "none"}}>
                         <div className="data">
                             <div className="proj-header">
                                 My Projects
                             </div>
                             <div className="project-cont">
-                                <div className="img"></div>
-                                <div className="img"></div>
-                                <div className="img"></div>
+                                <div className="img"><img src={bakery} alt="" /></div>
+                                <div className="img"><img src={fresh} alt="" /></div>
+                                <div className="img"><img src={bravis} alt="" /></div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

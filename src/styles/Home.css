@@ -4,7 +4,17 @@
     --bg-primary-color: #282F37;
     --bg-secondary-color: #383838;
     --shadow-color: #FFF;
+    --btn-hover-color: #a3fef933;
 }
+
+.btn-hover:hover {
+    /* background-color: var(--btn-hover-color); */
+    box-shadow: 0 0 10px var(--primary-color);
+    text-shadow: 0 0 7px var(--primary-color);
+    transition: all  0.3s;
+
+}
+
 
 #home {
     width: 100%;
@@ -58,6 +68,11 @@
     border-radius: 50%;
     border: 2px solid var(--primary-color);
     margin: 0 auto;
+    overflow: hidden;
+    
+}
+#home .profile .img> img {
+    width: 120px;
     
 }
 #home .profile .name {
@@ -106,11 +121,15 @@
 #home .icon {
     color: var(--primary-color);
     font-size: 32px;
-    
+}
+#home .icon:hover {
+    /* box-shadow: 0 0 10px var(--primary-color); */
+    /* color: red; */
 }
 
 #home .contact-icon {
     color: var(--primary-color);
+    
     font-size: 15px;
 }
 
@@ -165,6 +184,8 @@
     font-size: 20px;
     color: var(--text-color);
 }
+
+
 
 /* icon */
 

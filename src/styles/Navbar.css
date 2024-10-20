@@ -25,6 +25,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--bg-primary-color);
+    /* margin-bottom: 100px; */
     
 }
 
@@ -47,4 +48,17 @@
     color: var(--text-color);
     font-weight: 500;
     cursor: pointer;
+}
+#navBar .nav-item> a {
+    color: inherit;
+}
+#navBar .nav-item .nav-active {
+    color: var(--primary-color);
+}
+
+#navBar .nav-fix {
+    position: fixed;
+    top: 0;
+    /* margin-bottom: 100px; */
+    z-index: 1000;
 }

@@ -82,8 +82,18 @@
 #aboutMe .img {
     width: 450px;
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
 
-    border: 1px solid red;
+#aboutMe .img > img  {
+    width: 400px;
+    height: auto;
+    
+    /* box-shadow: 5px 5px var(--primary-color); */
 }
 #aboutMe .text {
     width: 600px;
@@ -195,5 +205,8 @@
     width: 315px;
     height: 469px;
     border-radius: 30px;
-    border: 1px solid red;
+    box-shadow: 3px 3px 10px var(--primary-color);
+    overflow: hidden;
+    /* border: 1px solid red; */
 }
+

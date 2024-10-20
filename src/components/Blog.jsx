@@ -3,7 +3,7 @@ import "../styles/Blog.css"
 
 export default function Blog() {
     return (
-        <div id='blog'>
+        <section id='blog'>
             <div className="blog-cont">
                 <h1 className="header">Blogs</h1>
                 <div className="data-cont">
@@ -20,7 +20,7 @@ export default function Blog() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

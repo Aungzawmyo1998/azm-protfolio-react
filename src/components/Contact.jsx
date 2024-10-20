@@ -1,10 +1,12 @@
 import React from 'react'
 
+
+
 import "../styles/Contact.css"
 
 export default function Contact() {
     return (
-        <div id='contact'>
+        <section id='contact'>
             <div className="contact-cont">
                 <h1 className="header">
                     Contact <span className='col'> Me </span> !
@@ -22,10 +24,10 @@ export default function Contact() {
                         <textarea className='message' name="" id="" placeholder='Message ....'></textarea>
                     </div>
                     <div className="row">
-                        <button className='contact-btn'>Send</button>
+                        <button className='contact-btn btn-hover'>Send</button>
                     </div>
                 </form>
             </div>
-        </div>
+        </section>
     )
 }
